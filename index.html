@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Succulent Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Here I am setting up my header-->
+    <header>
+        <div id="headerLine1"> <!--I split the header into two blocks on top of each other-->
+            <div id="logo">
+                <img id="leafIcon" src="images\assets\leaf.png" alt="stylized leaf">
+                <h1>EasyBay</h1>
+            </div>
+            <div>
+                <input type="text" id="searchbar" placeholder="   Search for anything">
+            </div>
+            <div id="signIn">
+                <p>Sign in</p>
+                <img onclick="alert('Your cart is empty!')" id="cart" src="images\assets\cart-dark.png" alt="cart">
+            </div>
+        </div>
+        <!--Using a list is another option here, but I like it without the bullets-->
+        <div id="headerLine2">
+            <p>Aeonium</p>
+            <p>Andormischus</p>
+            <p>Agave</p>
+            <p>Aloe</p>
+            <p>Anacampseros</p>
+            <p>Aristaloe</p>
+            <p>More...</p>
+        </div>
+        <!--This is my pretty line-->
+        <div id="prettyLine">
+        </div>
+    </header>
+</head>
+<body>
+    <!--This is the main portion of the page, split into 2 rows and a banner-->
+    <div id="banner">
+        <h2>Your Source for Serious Succulent Specialties</h2>
+    </div>
+    <div id="mainColumn">
+        <div id="upperRow">
+            <div id="block1">
+                <div id="subBlock2">
+                    <p>Discover succ- <br> ulent varieties <br> one pot or rack <br> at a time!</p>
+                </div>
+                <div id="subBlock1">
+                    <p>Discover</p>
+                    <img class="arrow" src="images\assets\arrow-light.png" alt="arrow">
+                </div>
+            </div>
+            <div id="block2">
+                <img onmouseover="changeImage(this)" onmouseleave="changeImageBack(this)" src="images\assets\succulents-1.jpg" alt="succulents1">
+            </div>
+            <div id="block3">
+                <img id="aloem" src="images\assets\aloe-m.jpg" alt="aloe-m">
+                <div id="soothing">
+                    <p>Soothing Aloe</p>
+                    <img class="arrow" src="images\assets\arrow-light.png" alt="arrow">
+                </div>
+            </div>
+        </div>
+        <div id="lowerRow">
+            <div>
+                <img class="plants" src="images\assets\aeonium-s.jpg" alt="Aeonium plant">
+                <p class="plantName">Aeonium</p>
+            </div>
+            <div>
+                <img class="plants" src="images\assets\aloe-s.jpg" alt="Aloe plant">
+                <p class="plantName">Aloe</p>
+            </div>
+            <div>
+                <img class="plants" src="images\assets\cactus-s.jpg" alt="Cactus plant">
+                <p class="plantName">Cactus</p>
+            </div>
+            <div>
+                <img class="plants" src="images\assets\echeveria-s.jpg" alt="Echeveria plant">
+                <p class="plantName">Echeveria</p>
+            </div>
+            <div>
+                <img class="plants" src="images\assets\sedum-s.jpg" alt="Sedum plant">
+                <p class="plantName">Sedum</p>
+            </div>
+            <div>
+                <img class="plants" src="images\assets\sempervivum-s.jpg" alt="Sempervivum plant">
+                <p class="plantName">Sempervivum</p>
+            </div>
+        </div>
+    </div>
+    <!--This next div is for the Cookie Alert Box-->
+    <div id="cookieBox">
+        <img id="alertIcon" src="images\assets\alert-dark.png" alt="CookieAlert">
+        <p>This site makes use of third-party cookies, by clicking "I accept" you agree to the terms outlined in our <a href="#">cookie policy.</a></p>
+        <button id="accept" onclick="accept(this)">I accept</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
